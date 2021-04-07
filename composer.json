@@ -1,0 +1,19 @@
+{
+    "name": "marcelmelo/tdameritrade-api",
+    "description": "A PHP library used to interact with the TD Ameritrade API.",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "marcel melo",
+            "email": "marcel.mdr@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mmmelo\\TDAmeritradeApi\\": "src"
+        }
+    }
+}
