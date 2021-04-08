@@ -10,7 +10,9 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "guzzlehttp/guzzle": "^7.3"
+    },
     "autoload": {
         "psr-4": {
             "Mmmelo\\TDAmeritradeApi\\": "src"

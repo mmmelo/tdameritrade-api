@@ -4,10 +4,22 @@
 namespace Mmmelo\TDAmeritradeApi;
 
 
+
+use Mmmelo\TDAmeritradeApi\Traits\TDAConnection;
+
 class TDAmeritradeApi
 {
-    public function __construct()
-    {
 
+    use TDAConnection;
+
+    protected $consumerKey;
+    protected $callbackUrl;
+
+    public function __construct(string $consumerKey = null, string $callbackUrl = null){}
+
+    public function login()
+    {
+        $auth = new Authentication( $this->consumerKey, $this->callbackUrl);
+        return $auth->getLoginUrl();
     }
 }
