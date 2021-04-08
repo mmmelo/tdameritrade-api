@@ -12,6 +12,7 @@ class Authentication
 
     const AUTH_URI = 'https://auth.tdameritrade.com/';
     private $callbackUri;
+    private $consumerKey;
 
     public function __construct(string $consumerKey = null, string $callbackUrl = null)
     {
